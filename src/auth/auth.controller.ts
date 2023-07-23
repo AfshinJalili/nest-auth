@@ -6,11 +6,9 @@ import {
   HttpStatus,
   Post,
   Request,
-  UseGuards,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { User } from '../users/users.service';
-import { AuthGuard } from './auth.guard';
 import { Public } from '../decorators/public.decorator';
 
 @Controller('auth')
